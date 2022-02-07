@@ -1,0 +1,112 @@
+
+html {
+  height:100%;
+  width: 100%;
+
+}
+$whiteText: hsl(0, 0%, 95%);
+$greyText: hsl(0, 0%, 25%);
+$blueAccent: cyan;
+$yellowAccent: yellow;
+$blueBackground: hsl(216, 30%, 16%);
+body {
+
+  margin: 0;
+  padding: 0;
+  height:100%;
+  width: 100%;
+}
+
+.blue-accent {
+  color:$blueAccent;
+}
+
+nav {
+  display: none;
+}
+
+.divider-line {
+
+  width: 8rem;
+  height: 0.8rem;
+  background-color: $yellowAccent;
+
+  #yellow {
+  background-color: $yellowAccent;
+  }
+}
+
+.header-wrapper {
+  width:100%;
+  height: 100%;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/header-image.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h1 {
+    color: $whiteText;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 8rem;
+    line-height: 12rem;
+}
+.boom {
+  height: 20vw;
+  width: 20vw;
+  background-color: #fff;
+  border: 10px solid purple;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+
+    max-width: 100%;
+  }
+}
+}
+
+h2 {
+
+  font-family: 'Big Shoulders Display', cursive;
+
+  font-size: 6rem;
+
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: $whiteText;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+li {
+  font-family: 'Lexend Deca', sans-serif;
+  color: $whiteText;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+#about-me{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  background-color: $blueBackground;
+  h2 {
+    color: $whiteText;
+  };
+}
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  h2 {
+    color: $greyText;
+  };
+}
