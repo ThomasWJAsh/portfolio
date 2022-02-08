@@ -128,10 +128,6 @@ li {
   border-radius: 10px;
 }
 
-.card-content {
-  padding: 10% 20%;
-}
-
 .card {
   display: flex;
   flex-direction: column;
@@ -139,22 +135,34 @@ li {
   background-color: #f2f2f2;
   border-radius: 10px;
   box-shadow: 1px 2px 5px #404040;
+  overflow: hidden;
 }
 .card h2 {
   font-family: "Big Shoulders Display";
   color: #404040;
   font-size: 2rem;
+  margin-bottom: 0;
 }
 .card p {
   font-family: "Lexend Deca";
   font-size: 1rem;
   line-height: 1.5rem;
+  margin-top: 0;
 }
 .card .icon {
   width: 100%;
+  height: 40%;
+  overflow: hidden;
 }
 .card .icon img {
   max-width: 100%;
+}
+.card .card-content {
+  padding: 0 20% 20% 20%;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card button {
   font-family: "Lexend Deca";
@@ -169,11 +177,11 @@ li {
 @media only screen and (min-width: 992px) {
   .card-wrapper {
     width: 65%;
+    height: 60vh;
   }
 
   .card {
     grid-row: 1;
-    height: 100%;
   }
   .card button:hover {
     background-color: #fff;
