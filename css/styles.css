@@ -75,7 +75,6 @@ h2 {
 
 p {
   font-family: "Lexend Deca", sans-serif;
-  color: #f2f2f2;
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
@@ -94,8 +93,6 @@ li {
   align-items: center;
   padding: 5rem;
   background-color: #1d2635;
-}
-#about-me h2 {
   color: #f2f2f2;
 }
 
@@ -105,6 +102,7 @@ li {
   justify-content: center;
   align-items: center;
   padding: 5rem;
+  color: #404040;
 }
 #projects h2 {
   color: #404040;
@@ -130,11 +128,14 @@ li {
   border-radius: 10px;
 }
 
+.card-content {
+  padding: 10% 20%;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10% 20%;
   background-color: #f2f2f2;
   border-radius: 10px;
   box-shadow: 1px 2px 5px #404040;
@@ -146,17 +147,14 @@ li {
 }
 .card p {
   font-family: "Lexend Deca";
-  color: rgba(255, 255, 255, 0.75);
+  font-size: 1rem;
   line-height: 1.5rem;
 }
-.card#one {
-  background: #fff;
+.card .icon {
+  width: 100%;
 }
-.card#two {
-  background: #fff;
-}
-.card#three {
-  background: #fff;
+.card .icon img {
+  max-width: 100%;
 }
 .card button {
   font-family: "Lexend Deca";
@@ -170,13 +168,12 @@ li {
 
 @media only screen and (min-width: 992px) {
   .card-wrapper {
-    height: 70%;
     width: 65%;
   }
 
   .card {
     grid-row: 1;
-    padding: 20%;
+    height: 100%;
   }
   .card button:hover {
     background-color: #fff;
