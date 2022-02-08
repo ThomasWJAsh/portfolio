@@ -70,8 +70,6 @@ background-color: $blueAccent;
   border: 10px solid $magentaAccent;
   border-radius: 50%;
   overflow: hidden;
-  filter: drop-shadow(1px 1px 1px $greyText);
-  box-shadow: inset 1px 1px 10px $greyText;
 
   img {
     max-width: 100%;
@@ -81,11 +79,9 @@ background-color: $blueAccent;
 }
 
 h2 {
-
   font-family: 'Big Shoulders Display', cursive;
   font-size: 6rem;
   line-height: 6rem;
-
 }
 
 p {
@@ -101,26 +97,32 @@ li {
   line-height: 2.5rem;
 }
 
-#about-me{
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5rem;
+
+}
+
+#about-me{
   background-color: $blueBackground;
   color: $whiteText;
 }
 
 #projects{
+  color: $greyText;
+}
+
+#contact{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5rem;
+  background-color: $whiteText;
   color: $greyText;
-  h2 {
-    color: $greyText;
-  };
 }
 
 .colour-spots {
