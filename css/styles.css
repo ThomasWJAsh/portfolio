@@ -12,7 +12,7 @@ body {
 }
 
 .blue-accent {
-  color: cyan;
+  color: #15cadb;
 }
 
 nav {
@@ -21,11 +21,21 @@ nav {
 
 .divider-line {
   width: 8rem;
-  height: 0.8rem;
-  background-color: yellow;
+  height: 0.75rem;
+  margin-left: 2rem;
+  background-color: #fde014;
 }
-.divider-line #yellow {
-  background-color: yellow;
+
+.yellow {
+  background-color: #fde014;
+}
+
+.magenta {
+  background-color: #c7205a;
+}
+
+.cyan {
+  background-color: #15cadb;
 }
 
 .header-wrapper {
@@ -47,9 +57,11 @@ nav {
   height: 20vw;
   width: 20vw;
   background-color: #fff;
-  border: 10px solid purple;
+  border: 10px solid #c7205a;
   border-radius: 50%;
   overflow: hidden;
+  filter: drop-shadow(1px 1px 1px #404040);
+  box-shadow: inset 1px 1px 10px #404040;
 }
 .header-wrapper .boom img {
   max-width: 100%;
@@ -58,6 +70,7 @@ nav {
 h2 {
   font-family: "Big Shoulders Display", cursive;
   font-size: 6rem;
+  line-height: 6rem;
 }
 
 p {
@@ -95,6 +108,19 @@ li {
 }
 #projects h2 {
   color: #404040;
+}
+
+.colour-spots {
+  display: grid;
+  grid-gap: 15px;
+  margin-bottom: 4rem;
+}
+
+.spot {
+  border-radius: 50%;
+  grid-row: 1;
+  height: 20px;
+  width: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
