@@ -12,6 +12,7 @@ $blueAccent: #15cadb;
 $yellowAccent: #fde014;
 $magentaAccent: #c7205a;
 $blueBackground: hsl(216, 30%, 16%);
+
 body {
 
   margin: 0;
@@ -24,8 +25,20 @@ body {
   color:$blueAccent;
 }
 
-nav {
-  display: none;
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  width: 100%;
+
+  .menu
+
+  {
+    display: none;
+  }
 }
 
 .divider-line {
@@ -74,7 +87,6 @@ background-color: $blueAccent;
   img {
     max-width: 100%;
   }
-
 }
 }
 
@@ -95,6 +107,22 @@ li {
   font-size: 1.5rem;
   line-height: 2.5rem;
 }
+
+.burger {
+height: 50px;
+width: 50px;
+display: grid;
+row-gap: 0.5px;
+cursor: pointer;
+
+.line {
+width: 100%;
+height: 10px;
+border-radius: 10%;
+}
+
+}
+
 
 section {
   display: flex;
@@ -210,17 +238,23 @@ overflow: hidden;
 
 
 }
-
-  &#one {
-    button:hover {
-  color: $greyText}};
-  &#two {
-    button:hover {
-  color: $greyText}};
-  &#three {
-    button:hover {
-  color: $greyText}};
 }
 
+.hover-yellow:hover
+{
+  color: $yellowAccent;
+  border-color: $yellowAccent;
+}
+.hover-magenta:hover
+{
+  color: $magentaAccent;
+  border-color: $magentaAccent;
+}
+
+.hover-blue:hover
+{
+  color: $blueAccent;
+  border-color: $blueAccent;
+}
 
 }

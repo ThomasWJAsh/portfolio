@@ -11,12 +11,22 @@
     <script defer src="js/main.js"></script>
   </head>
   <body>
-    <nav>
-      <ul>
+    <nav class="navbar">
+<!-- nav animation - the three burger bars will move up onto one line and stretch
+out to form the edge of the menu -->
+      <ul class="menu">
         <li><a href="#about-me">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="burger">
+          <div class="line magenta">
+            </div>
+            <div class="line yellow">
+              </div>
+            <div class="line cyan">
+              </div>
+        </div>
 
     </nav>
     <header class="header-wrapper">
@@ -71,7 +81,7 @@
         <h2>Project One</h2>
         <p>Some text that explains the project and why it's interesting.</p>
 
-      <button type="button" class="card-button" name="button">Learn More</button></div>
+      <button type="button" class="hover-magenta" name="button">Learn More</button></div>
 
       </div>
 
@@ -84,7 +94,7 @@
         <h2>Project Two</h2>
         <p>Some text that explains the project and why it's interesting.</p>
 
-      <button type="button" class="card-button" name="button">Learn More</button></div>
+      <button type="button" class="hover-yellow" name="button">Learn More</button></div>
 
       </div>
       <div class="card">
@@ -96,7 +106,7 @@
         <h2>Project Three</h2>
         <p>Some text that explains the project and why it's interesting.</p>
 
-      <button type="button" class="card-button" name="button">Learn More</button></div>
+      <button type="button" class="hover-blue" name="button">Learn More</button></div>
 
       </div>
 
